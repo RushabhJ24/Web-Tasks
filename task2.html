@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="task2.css">
+    <script src="https://kit.fontawesome.com/c2828842e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="#">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>  
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rushabh</span> Jain</h1>
+            </div>      
+        </div>
+    </div>
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="#">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia? Quas consequatur assumenda magni hic fugiat, dolorem reiciendis vitae quisquam velit tempore laboriosam. Exercitationem, optio reprehenderit veniam enim alias consectetur iusto corporis excepturi, maiores tempore architecto provident, in voluptatum vero delectus voluptas temporibus corrupti aliquam dolorem? Commodi sed eum est sunt quod error et corporis quos dolor modi saepe molestiae minima inventore dicta architecto fugit fuga voluptas aliquam minus, in exercitationem laboriosam voluptatum numquam? Voluptate quas nisi quisquam, commodi rerum alias iure excepturi ut! Tenetur voluptates facere est, expedita reprehenderit possimus odit molestias veritatis. Totam, unde. Iure architecto saepe reiciendis!</p>
+                   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Java Programmer</span><br>Java Development</li>
+                            <li><span>Python Programmer</span><br>Python Development</li>
+                            <li><span>Machine Learning</span><br>ML Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sept 2023</span><br>Data Science and Machine Learning Internship</li>
+                            <li><span>March 2023</span><br>Python Programming Training</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>Third Year Graduate, Department of Computer Engineering(B.Tech), Pillai College of Engineering<br>CGPI : 9.13/10</li>
+                            <li><span>2021</span><br>XII, Matoshri Junior College, Mhasrul<br>Percentage : 93.83</li>
+                            <li><span>2019</span><br>X, A.B.Boys Highschool, Chalisgaon<br>Percentage : 93.80</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------Services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titles">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Elevate your online presence with cutting-edge web design services, where creativity meets functionality to craft visually stunning and user-friendly websites that leave a lasting impression.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Machine Learning</h2>
+                <p>Empower your business with cutting-edge machine learning service, delivering unparalleled predictive analytics, pattern recognition, and data-driven insights for informed decision-making.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Coding/Programming</h2>
+                <p>Expert coding and programming services tailored to meet your project needs, delivering efficient and innovative solutions with precision and expertise.</p>
+            </div>        
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+</body>
+</html>
