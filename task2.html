@@ -11,14 +11,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="#">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <h2><span>R</span>ushabh.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>  
             <div class="header-text">
                 <p>Web Developer</p>
@@ -27,15 +29,28 @@
         </div>
     </div>
 
-    <div id="About">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="#">
+                    <img src="Images/Portfolio Image.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, mollitia? Quas consequatur assumenda magni hic fugiat, dolorem reiciendis vitae quisquam velit tempore laboriosam. Exercitationem, optio reprehenderit veniam enim alias consectetur iusto corporis excepturi, maiores tempore architecto provident, in voluptatum vero delectus voluptas temporibus corrupti aliquam dolorem? Commodi sed eum est sunt quod error et corporis quos dolor modi saepe molestiae minima inventore dicta architecto fugit fuga voluptas aliquam minus, in exercitationem laboriosam voluptatum numquam? Voluptate quas nisi quisquam, commodi rerum alias iure excepturi ut! Tenetur voluptates facere est, expedita reprehenderit possimus odit molestias veritatis. Totam, unde. Iure architecto saepe reiciendis!</p>
+                    <p>Hey there! I'm Rushabh a passionate web developer with a knack for turning ideas into digital realities. 
+                        Welcome to my corner of the internet, where creativity meets functionality.I specialize in crafting engaging and 
+                        user-friendly websites that not only look great but also deliver seamless and intuitive user experiences. 
+                        From front-end magic that captivates visitors to back-end wizardry that ensures smooth functionality, I love bringing 
+                        concepts to life through code.It's the perfect blend of problem-solving, creativity, and the ability to make a tangible 
+                        impact in the digital realm. Every line of code I write is a step toward building something that matters, whether it's 
+                        a sleek portfolio, an e-commerce platform, or a dynamic web application.In this fast-paced industry, I believe in the 
+                        power of continuous learning. Whether it's exploring new frameworks, staying updated on the latest design trends, or 
+                        diving into emerging technologies, I thrive on the excitement of growth and adaptation.I'm always on the lookout for 
+                        exciting projects and collaborations. Whether you're a fellow developer, a business owner looking to enhance your 
+                        online presence, or anyone with a passion for innovation, let's connect! Together, we can turn your ideas into digital 
+                        masterpieces.Striking a balance between work and play keeps the creative juices flowing and ensures I bring fresh 
+                        perspectives to every project. Feel free to explore my portfolio, and if you have a project in mind or just want to 
+                        say hello, don't hesitate to reach out. Let's build something amazing together!</p>
                    
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -74,7 +89,7 @@
 <!-- --------------------Services---------------- -->
 <div id="services">
     <div class="container">
-        <h1 class="sub-titles">My Services</h1>
+        <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -95,6 +110,80 @@
     </div>
 </div>
 
+<!-- ---------------Portfolio-------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Blood Management System</h3>
+                    <p>Blood Donation GUI using Python (August 2022 - November 2022)<br>A blood Donation GUI using Python has a GUI in which user can sign in enter a
+                        needed information and asking for required blood group and if we have a blood
+                        donor in our database then we show the blood donor's information to the user. We
+                        used python GUI and sqlite3 for database.</p>
+                    <a href="https://github.com/RushabhJ24/Blood-Management-System.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Hospital Management System</h3>
+                    <p>Hospital or Doctor searching and Appointment booking (January 2023 - April 2023)<br>It is a website in which user has to sign in and after that he/she can serch for
+                        doctor or for hospital and book an appointment with doctor. HTML, CSS,
+                        Javascript, Xampp are used.</p>
+                    <a href="https://github.com/RushabhJ24/Hospital-Management-Project.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Stock Market Prediction System</h3>
+                    <p>Stock Market Prediction System using Machine Learning & LSTM Model (August 2023 - November 2023)<br>In this web application user can check the predicted stock price for given companies. We have use the live data for prediction and used the Long Short Term Memory(LSTM) Model. </p>
+                    <a href="https://github.com/RushabhJ24/ML-Stock-Prediction.git" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<!-- -----------------Contact----------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>rushabhsjain40@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9767922099</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rushabh-jain-79855a23a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/RushabhJ24" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rushabhjain424?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100055061354039" target="_blank"><i class="fab fa-facebook"></i></a>
+
+                </div>
+                <a href="Images/RJ Resume .pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rushabh. Made with <i class="fas fa-heart"></i> by RJ</p>
+    </div>
+</div>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -112,6 +201,31 @@
         }
     </script>
 
-
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlO0bkvFUDaCbwpTutf1LZ0LB-gIR6y08eZJwxlnAzp87XL3mUG1jzntWOgChco4V1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
