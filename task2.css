@@ -202,7 +202,6 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block0;
-    
     transition: transform 0.5s;
 }
 .layer{
